@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300;400&display=swap");
+.login__form-container {
+  width: 450px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(109, 17, 109, 0.247);
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.699);
+  padding: 40px 30px;
+  transition: all 0.3s;
+  font-weight: 100;
+  animation-name: formAnim;
+  animation-duration: 0.5s;
+}
+
+@keyframes formAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.login-form .login-form-title {
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-form .form-input {
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 5px;
+  padding: 7px;
+  margin: auto;
+  margin-bottom: 10px;
+  outline: none;
+  color: gray;
+}
+.login-form .form-input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.301);
+}
+.login-form .form-input::placeholder {
+  color: rgba(0, 0, 0, 0.301);
+}
+.login-form .additionals {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.login-form .additionals a {
+  color: rgb(0, 0, 0);
+}
+.login-form .save-password {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.login-form .save-password p {
+  color: black;
+}
+.login-form .save-password input {
+  background-color: black;
+  color: black;
+}
+.login-form .btn-passwordRecovery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-form .btn-passwordRecovery .sign-up-btn {
+  position: relative;
+  padding: 8px 30px;
+  color: gray;
+  border: none;
+  border-radius: 5px;
+  background: rgb(109, 17, 109);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.795);
+  transition: 0.3s;
+}
+.login-form .btn-passwordRecovery a {
+  color: black;
+}
+
+@media (max-width: 310px) {
+  .login__form-container {
+    padding: 20px 10px;
+  }
+}
+@media (min-width: 2560px) {
+  .login__form-container {
+    transform: scale(1.5);
+  }
+}
+@media (min-width: 3840px) {
+  .login__form-container {
+    transform: scale(2);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

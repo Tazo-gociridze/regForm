@@ -1,0 +1,123 @@
+$color-gray: rgba(128, 128, 128, 0.63);
+$pourple: rgb(109, 17, 109);
+
+
+.login__form-container {
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(109, 17, 109, 0.247);
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.699);
+    padding: 40px 30px;
+    transition: all 0.3s;
+    font-weight: 100;
+
+    animation-name: formAnim;
+    animation-duration: 0.5s;
+}
+
+@keyframes formAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.login-form {
+    .login-form-title {
+        font-size: 30px;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-input {
+        display: block;
+        width: 100%;
+        border: 1px solid rgb(128, 128, 128);
+        border-radius: 5px;
+        padding: 7px;
+        margin: auto;
+        margin-bottom: 10px;
+        outline: none;
+        color: gray;
+
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.301);
+        }
+    }
+
+    .additionals{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        a{
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .save-password {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 20px;
+
+        p{
+            color: black;
+        }
+
+        input {
+            background-color: black;
+            color: black;
+        }
+    }
+
+    .btn-passwordRecovery{
+         
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sign-up-btn {
+            position: relative;
+            padding: 8px 30px;
+            color: gray;
+            border: none;
+            border-radius: 5px;
+            background: $pourple;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.795);
+            transition: 0.3s;
+        }
+
+        a{
+            color: black;
+        }
+    }
+}
+
+
+@media(max-width:310px) {
+    .login__form-container{
+        padding: 20px 10px;
+    }
+}
+
+@media(min-width:2560px) {
+    .login__form-container{
+        transform: scale(1.5);
+    }
+}
+
+
+@media(min-width:3840px) {
+    .login__form-container{
+        transform: scale(2);
+    }
+}
